@@ -262,7 +262,7 @@ $$ LANGUAGE plpgsql;
 SELECT are_users_subscribed(1, 6);
 
 
-CREATE PROCEDURE SubscribeUsers(
+CREATE PROCEDURE subscribe_users(
   IN user1_id INT,
   IN user2_id INT
 )
@@ -281,6 +281,6 @@ BEGIN
 END;
 $$
 
-CALL SubscribeUsers(1, 6);
+CALL subscribe_users(1, 6);
 
 
